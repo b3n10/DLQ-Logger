@@ -1,0 +1,128 @@
+/*import fonts if reachable*/
+
+@import url('https://fonts.googleapis.com/css?family=Coiny|Montserrat');
+
+
+
+* {
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 1em;
+
+}
+
+
+
+html, body {
+
+  padding: 0;
+
+  margin: 0;
+
+  font-size: 90%;  
+
+}
+
+
+
+.div-parent {
+
+  display: block;
+
+  margin: auto;
+
+  max-width: 650px;
+
+}
+
+
+
+.div-midcolcontainer, .div-row {
+
+  display: flex;
+
+  width: 100%;
+
+}
+
+
+
+.div-subrow {
+
+  width: 100%;
+
+  margin: 1px;
+
+}
+
+
+
+.div-col1, .div-col2 {
+
+  margin: 2px 2px;
+
+}
+
+
+
+.div-col1, .div-col2, input[type="text"], textarea, select {
+
+  border: 1px solid gray;
+
+  width: 100%;  
+
+}
+
+
+
+.div-label {
+
+  width: 80%;
+
+}
+
+
+
+.div-cbox .div-subrow label {
+
+  width: 20%;
+
+}
+
+
+
+.div-cbox .div-subrow label, input[type="checkbox"], input[type="radio"], .div-radiobuttons .div-row .div-subrow:nth-child(2) label, .div-col2 .div-row .div-subrow:nth-child(2) label {
+
+  cursor: pointer;
+
+}
+
+
+
+textarea {
+
+  height: 100px;
+
+}
+
+
+
+.div-cbox .div-subrow, .center, span label {
+
+  text-align: center;
+
+}
+
+
+
+.div-label, .min {
+
+  width: 60%;
+
+}  
+

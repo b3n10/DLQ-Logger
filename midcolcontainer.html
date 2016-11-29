@@ -1,0 +1,1220 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="author" content="Francis Ben Lleve">
+
+  <meta name="description" content="DLQ Logger.">
+
+  <title>div-midcolcontainer</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+
+
+<!--
+
+suggestion:
+
+-move SR above cx info
+
+-->
+
+
+
+<body>
+
+<div class="div-parent">
+
+
+
+  <div class="div-midcolcontainer">
+
+
+
+    <div class="div-col1">
+
+
+
+<!--
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-symptom">Symptoms:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-symptom" />
+
+        </div>    
+
+      </div>
+
+-->
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-servicetag">Service Tag:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-servicetag" />
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-systemtype">System Type:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-systemtype" />
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow center">
+
+          <label for="txt-firstname">
+
+            <strong>Customer Name</strong>
+
+          </label>         
+
+        </div>
+
+      </div>      
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-firstname" placeholder="First Name" />
+
+        </div>    
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-lastname" placeholder="Last Name" />
+
+        </div>    
+
+      </div>
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-phonenumber">Phone Number:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-phonenumber" />
+
+        </div>    
+
+      </div>
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-emailaddress">Email Address:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-emailaddress" />
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-servicereq">Service Req-#:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-servicereq" />
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="cbox-servicedeferralyes">Service Deferral:</label>    
+
+        </div>
+
+        <div class="div-subrow center">
+
+          <!--<input type="radio" id="txt-deferredsvc" name="test" value="**Service Deferral" onclick="if(this.checked){SVC_DEF_SHOW_DIV()}"/>-->
+
+          <input type="checkbox" id="cbox-servicedeferralyes" />
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-cxjourney">Customer Journey:</label>    
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-cxjourney" />
+
+        </div>    
+
+      </div>
+
+
+
+      <!--checkboxes-->
+
+      <div class="div-row div-cbox">
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-va" />
+
+          <br/>
+
+          <label for="cbox-va">VA</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-vdi" />
+
+          <br/>
+
+          <label for="cbox-vdi">VDI</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-tat" />
+
+          <br/>
+
+          <label for="cbox-tat">TAT</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-tarp" />
+
+          <br/>
+
+          <label for="cbox-tarp">TARP</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-vpkrs" />
+
+          <br/>
+
+          <label for="cbox-vpkrs">VPKRS</label>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="div-row div-cbox">
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-cid" />
+
+          <br/>
+
+          <label for="cbox-cid">CID</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-sr" />
+
+          <br/>
+
+          <label for="cbox-sr">Gave SR</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-toade" />
+
+          <br/>
+
+          <label for="cbox-toade">TOADE</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-crufru" />
+
+          <br/>
+
+          <label for="cbox-crufru">CRU-FRU</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="checkbox" id="cbox-dataloss" />
+
+          <br/>
+
+          <label for="cbox-dataloss">Data Loss</label>
+
+        </div>
+
+      </div>
+
+
+
+      <!--radio buttons-->
+
+      <div class="div-radiobuttons">
+
+        <div class="div-row">
+
+          <div class="div-subrow center">
+
+            <label>
+
+              <strong>Call Flow</strong>
+
+            </label> 
+
+          </div>
+
+        </div>
+
+              
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Restate Issue:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_restateissueyes">Yes</label>
+
+            <input name="rdo_restateissue" id="rdo_restateissueyes" type="radio">
+
+            <label for="rdo_restateissueno">No</label>
+
+            <input name="rdo_restateissue" id="rdo_restateissueno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Accountability Statement:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_accountabilitystatementyes">Yes</label>
+
+            <input name="rdo_accountabilitystatement" id="rdo_accountabilitystatementyes" type="radio">
+
+            <label for="rdo_accountabilitystatementno">No</label>
+
+            <input name="rdo_accountabilitystatement" id="rdo_accountabilitystatementno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Warranty Education:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_warrantyeducationyes">Yes</label>
+
+            <input name="rdo_warrantyeducation" id="rdo_warrantyeducationyes" type="radio">
+
+            <label for="rdo_warrantyeducationno">No</label>
+
+            <input name="rdo_warrantyeducation" id="rdo_warrantyeducationno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Supported Boundaries:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_supportedboundariesyes">Yes</label>
+
+            <input name="rdo_supportedboundaries" id="rdo_supportedboundariesyes" type="radio">
+
+            <label for="rdo_supportedboundariesno">No</label>
+
+            <input name="rdo_supportedboundaries" id="rdo_supportedboundariesno" type="radio">
+
+          </div>
+
+        </div>
+
+
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Self-help Option Provided:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_selfhelpoptionprovidedyes">Yes</label>
+
+            <input name="rdo_selfhelpoptionprovided" id="rdo_selfhelpoptionprovidedyes" type="radio">
+
+            <label for="rdo_selfhelpoptionprovidedno">No</label>
+
+            <input name="rdo_selfhelpoptionprovided" id="rdo_selfhelpoptionprovidedno" type="radio">
+
+          </div>
+
+        </div><div class="div-row">
+
+          <div class="div-subrow center">
+
+            <label for="txt_whynotsupported">Why Not?</label>
+
+          </div>
+
+          <div class="div-subrow center">
+
+            <input disabled="" id="txt_whynotsupported" type="text">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Game Plan Communicated:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_gameplancommunicatedyes">Yes</label>
+
+            <input name="rdo_gameplancommunicated" id="rdo_gameplancommunicatedyes" type="radio">
+
+            <label for="rdo_gameplancommunicatedno">No</label>
+
+            <input name="rdo_gameplancommunicated" id="rdo_gameplancommunicatedno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Fee Based Communicated:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_feebasedcommunicatedyes">Yes</label>
+
+            <input name="rdo_feebasedcommunicated" id="rdo_feebasedcommunicatedyes" type="radio">
+
+            <label for="rdo_feebasedcommunicatedno">No</label>
+
+            <input name="rdo_feebasedcommunicated" id="rdo_feebasedcommunicatedno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+
+
+        <div class="div-row">
+
+          <div class="div-subrow center">
+
+            <label>
+
+              <strong>Transfer Procedure</strong>
+
+            </label> 
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Phone Number Provided:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_phonenumberprovidedyes">Yes</label>
+
+            <input name="rdo_phonenumberprovided" id="rdo_phonenumberprovidedyes" type="radio">
+
+            <label for="rdo_phonenumberprovidedno">No</label>
+
+            <input name="rdo_phonenumberprovided" id="rdo_phonenumberprovidedno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-subrow div-row">
+
+          <div class="div-subrow ">
+
+            <label>Dept Name Communicated:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_deptnamecommunicatedyes">Yes</label>
+
+            <input name="rdo_deptnamecommunicated" id="rdo_deptnamecommunicatedyes" type="radio">
+
+            <label for="rdo_deptnamecommunicatedno">No</label>
+
+            <input name="rdo_deptnamecommunicated" id="rdo_deptnamecommunicatedno" type="radio">
+
+          </div>
+
+        </div> 
+
+
+
+
+
+        <div class="div-row">
+
+          <div class="div-subrow center">
+
+            <label>
+
+              <strong>Call Closing</strong>
+
+            </label> 
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Further Assistance Needed:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_furtherassistanceneededyes">Yes</label>
+
+            <input name="rdo_furtherassistanceneeded" id="rdo_furtherassistanceneededyes" type="radio">
+
+            <label for="rdo_furtherassistanceneededno">No</label>
+
+            <input name="rdo_furtherassistanceneeded" id="rdo_furtherassistanceneededno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="div-row">
+
+          <div class="div-subrow ">
+
+            <label>Call Branding Communicated:</label>
+
+          </div>
+
+          <div class="div-subrow min center">
+
+            <label for="rdo_callbrandingcommunicatedyes">Yes</label>
+
+            <input name="rdo_callbrandingcommunicated" id="rdo_callbrandingcommunicatedyes" type="radio">
+
+            <label for="rdo_callbrandingcommunicatedno">No</label>
+
+            <input name="rdo_callbrandingcommunicated" id="rdo_callbrandingcommunicatedno" type="radio">
+
+          </div>
+
+        </div>
+
+        
+
+      </div>
+
+
+
+    </div><!--col1-->
+
+    
+
+    <div class="div-col2">
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-agentdescription">Agent Description:</label>
+
+          <a href="#">[select]</a>
+
+        </div>
+
+      </div>
+
+      <div class="div-row">      
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-agentdescription" />
+
+          <!--<input type="text" id="current_issue" />-->
+
+        </div>    
+
+      </div>
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow ">
+
+          <label>Customer Response/TS:</label>
+
+        </div>
+
+      </div>
+
+      <div class="div-row">      
+
+        <div class="div-subrow center">
+
+          <textarea id="txt-customerresponse"></textarea>
+
+        <!--<textarea id="customer_response" class="div_customer_response"></textarea>-->
+
+        </div>
+
+      </div>
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="txt-resolution">Resolution:</label>
+
+        </div>
+
+      </div>
+
+      <div class="div-row">      
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-resolution" />
+
+          <!-- <input type="text" id="resolution" /> -->
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="txt-okbid">OKB ID:</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-okbid" />
+
+          <!--   <input type="text" id="ftf_article" onfocusout="SVC_OKB_SHOW_DIV()"/> -->
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="txt-dellconnectid">DellConnect ID:</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-dellconnectid" />
+
+          <!-- <input type="text" id="txt_dcid" />  -->
+
+        </div>    
+
+      </div>
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="slt-diagnostics">Diagnostics:</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <select id="slt-diagnostics">
+
+            <option value=""> </option>
+
+            <option value="Not Run" id="not_run">Not Run</option>
+
+            <option disabled>- - - - - - - - - - - - -</option>
+
+            <option value="ePSA Diagnostic Test">ePSA Diagnostic Test</option>
+
+            <option value="PSA, PSA+, 32bit">PSA, PSA+, 32bit</option>
+
+            <option value="LED Code: Portable">LED Code: Portable</option>
+
+            <option value="BEEP Code: Portable">Beep Code: Portable</option>
+
+            <option value="SupportAssist">SupportAssist</option>
+
+            <option value="AC LED">AC Adapter LED Status</option>
+
+            <option value="Dell Online Diags">Dell Online Diags</option>
+
+            <option value="Intel ProSet Wireless diagnostic">Intel ProSet Wireless diags</option>
+
+            <option value="FPD BIST">FPD BIST</option>
+
+            <option value="LCD BIST">LCD BIST</option>
+
+            <option value="PSU BIST">PSU BIST</option>
+
+            <option value="Others">Others</option>
+
+          </select>        
+
+          <!-- 
+
+          <select style="width:130px; height:20px"" id="diagsRun" name="diagsRun" onchange="check_dd();">          
+
+          -->
+
+        </div>    
+
+      </div>
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="slt-consulted">Consulted:</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <select id="slt-consulted">
+
+            <option value=""></option>
+
+            <option value="n/a">N/A</option>
+
+            <option value="L2 Albert Pangan">Albert (L2)</option>  
+
+            <option value="L2 Bryan Espiritu">Bryan (L2)</option>
+
+            <option value="L2 Gallardo Gueco">Gallardo  (L2)</option>
+
+            <option value="L2 Kristoffer Allan Guinto">Allan Guinto(L2)</option>
+
+            <option value="L2 Carey Pornillos">Carey (L2)</option>
+
+            <option value="L2 Christian Paul Bucu">Christian (L2)</option>
+
+            <option value="L2 Delbert Navarro">Delbert (L2)</option>
+
+            <option value="L2 Eduardo Lastimosa">Edu(L2)</option>
+
+            <option value="L2 Emil Macapayag">Emil (L2)</option>
+
+            <option value="L2 Filomeno Rollen III">Fil (L2)</option>
+
+            <option value="L2 Gerard Nico Morales">Nico (L2)</option>
+
+            <option value="L2 Ghiven Suratos">Ghivs (L2)</option>
+
+            <option value="L2 Marc Anthony Santos">Marc (L2)</option>
+
+            <option value="L2 Katrina Sugabo">Kat (L2)</option>
+
+            <option value="L2 Kenny Lacsina">Kenny (L2)</option>
+
+            <option value="L2 Jason Cunanan">Jason (L2)</option>
+
+            <option value="L2 Jathniel Salas">Jath (L2)</option>
+
+            <option value="L2 Jeoffrey Canlas">Jops (L2)</option>
+
+            <option value="L2 Jun Campang">Master Jun (L2)</option>
+
+            <option value="L2 Ron-ron Lopez">Ron-ron (L2)</option>
+
+            <option value="L2 Onasis Aries Campos">Nash (L2)</option>
+
+            <option value="L2 Harrison Dare">Harris (L2)</option>
+
+            <option value="L2 Jun Campang">Master Jun (L2)</option>
+
+            <option value="L2 Rey Lucien Masangcay">Lucien (L2)</option>
+
+            <option value="L2 Reynaldo Tayag">Rey (L2)</option>
+
+            <option value="RSM Arn Canlas">Arn (RSM)</option>
+
+            <option value="RSM Kristine Opena">Kristine (RSM)</option>
+
+            <option value="TM Albino Quiambao">TM Bino</option>
+
+            <option value="TM Christoffer Bondoc">TM Topei</option>
+
+            <option value="TM Alvin Dyioco">TM Alvin</option>
+
+            <option value="TM Edwin Nicolas">TM Dhinx</option>
+
+            <option value="TM Jerico Flores">TM Kiko</option>
+
+            <option value="TM Jorge Moises Ybarola">TM JM</option>
+
+            <option value="TM Andrea Torno">TM Andrea</option>
+
+            <option value="TM Glen Esquejo">Glen (TM)</option>
+
+            <option value="TM Erra Pereyra">Erra (TM)</option>
+
+            <option value="TM Andrea Torno">TM Andrea</option>
+
+            <option value="TM Julian Henson">TM Julian</option>
+
+            <option value="TM Nerissa Pantig">TM Andrea</option>
+
+          </select>        
+
+          <!-- <select id="consulted"> -->
+
+        </div>    
+
+      </div>
+
+  
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label>Test E-Mail:</label>
+
+        </div>
+
+        <div class="div-subrow center">
+
+          <label for="rdo-testemailna">N/A</label>
+
+          <input type="radio" id="rdo-testemailna" name="rdo-testemail" checked />
+
+          <label for="rdo-testemailyes">Yes</label>
+
+          <input type="radio" id="rdo-testemailyes" name="rdo-testemail" />
+
+          <label for="rdo-testemailno">No</label>
+
+          <input type="radio" id="rdo-testemailno" name="rdo-testemail" />
+
+          <!-- 
+
+            <input type="radio" id="radio_test_email_NA" name="radio_test_email_name" value="Test Email: N/A" checked />
+
+            <label for="radio_test_email_NA">N/A</label>
+
+            <input type="radio" id="radio_test_email_Yes" name="radio_test_email_name" value="Test Email: Yes" />
+
+            <label for="radio_test_email_Yes">Yes</label>
+
+            <input type="radio" id="radio_test_email_No" name="radio_test_email_name" value="Test Email: No" />
+
+            <label for="radio_test_email_No">No</label>
+
+           -->
+
+        </div>    
+
+      </div>
+
+    
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label>Email Received:</label>
+
+        </div>
+
+        <div class="div-subrow center">
+
+          <label for="rdo-emailreceivedna">N/A</label>
+
+          <input type="radio" id="rdo-emailreceivedna" name="rdo-emailreceived" checked />
+
+          <label for="rdo-emailreceivedyes">Yes</label>
+
+          <input type="radio" id="rdo-emailreceivedyes" name="rdo-emailreceived" />
+
+          <label for="rdo-emailreceivedno">No</label>
+
+          <input type="radio" id="rdo-emailreceivedno" name="rdo-emailreceived" />
+
+          <!-- 
+
+            <input type="radio" id="radio_email_received_NA" name="radio_email_received_name" value="Email Received: N/A" checked />
+
+            <label for="radio_email_received_NA">N/A</label>      
+
+            <input type="radio" id="radio_email_received_Yes" name="radio_email_received_name" value="Email Received: Yes" />
+
+            <label for="radio_email_received_Yes">Yes</label>
+
+            <input type="radio" id="radio_email_received_No" name="radio_email_received_name" value="Email Received: No" />
+
+            <label for="radio_email_received_No">No</label>
+
+           -->
+
+        </div>    
+
+      </div>
+
+    
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow">
+
+          <label for="slt-capturedaltemail">Captured Alt E-Mail?</label>
+
+        </div>
+
+        <div class="div-subrow center">
+
+          <select id="slt-capturedaltemail" disabled>
+
+            <option value=""> </option>
+
+            <option value="Yes">Yes</option>
+
+            <option value="No">No</option>
+
+          </select>        
+
+          <!-- 
+
+          <select id="select_captured_alt_email" disabled>
+
+          -->
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="txt-dpsnumber">DPS #:</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-dpsnumber" />
+
+          <!-- <input type="" id="dps_num" /> -->
+
+        </div>    
+
+      </div> 
+
+
+
+      
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="slt-rating">Rating:</label>
+
+          <select id="slt-rating">
+
+            <option value="n/a">n/a</option>
+
+            <option value="9">9</option>
+
+            <option value="8">8</option>
+
+            <option value="7" selected>7</option>
+
+            <option value="6">6</option>
+
+            <option value="5">5</option>
+
+            <option value="4">4</option>
+
+            <option value="3">3</option>
+
+            <option value="2">2</option>
+
+            <option value="1">1</option>
+
+          </select>        
+
+          <!--   <select id="self_rating"> -->
+
+        </div>
+
+        <div class="div-subrow div-label">
+
+          <label for="slt-overallhc">Overall HC:</label>
+
+          <select id="slt-overallhc">
+
+            <option value="" selected></option>
+
+            <option value="n/a">n/a</option>
+
+            <option value="Satisfied">Satisfied</option>
+
+            <option value="Dissatisfied">DisSatisfied</option>
+
+          </select>        
+
+          <!--  <select id="heat_check"> -->
+
+        </div>    
+
+      </div>
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="txt-whydissatisfied">Why HC is DisSat?</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-whydissatisfied" disabled>
+
+          <!-- <input type="text" id="txt_reason_why_dissat" disabled="disabled" /> -->
+
+        </div>    
+
+      </div> 
+
+
+
+      <div class="div-row">
+
+        <div class="div-subrow div-label">
+
+          <label for="txt-callduration">Call Duration</label>
+
+        </div>
+
+        <div class="div-subrow">
+
+          <input type="text" id="txt-callduration">
+
+          <!--     <input type="text" id="txt_call_duration" /> -->
+
+        </div>    
+
+      </div> 
+
+  
+
+    </div><!--col2-->
+
+    
+
+  </div><!--middiv-->
+
+</div><!--parentdiv-->
+
+</body>
+
+</html>
